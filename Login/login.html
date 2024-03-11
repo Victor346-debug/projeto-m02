@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Barbearia Santos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <label for="nameUser">Nome completo:</label>
+            <input id="nameUser" type="text" required />
+
+            <label for="emailUser">Email:</label>
+            <input id="emailUser" type="email" required />
+
+            <label for="passwordUser">Senha:</label>
+            <input id="passwordUser" type="password" required />
+
+            <label for="confirmPassword">Confirme sua senha:</label>
+            <input id="confirmPassword" type="password" required />
+
+            <button id="submit" onclick="submitForm()">Enviar</button>
+
+            <p>
+                Já possui uma conta?
+                <a href="/ServiceUser/index.html"> Faça Seu Agendamento</a>
+            </p>
+        </div>
+    </div>
+    
+    <script src="/Login/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Agendamento Barbearia Santos</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="agendamento">
+       <h1>Agendamento</h1>
+       <form id="service-form">
+         <label for="service-name">Serviço:</label>
+         <select name="Serviços" id="service-name">
+          <option> </option>
+          <option value="Corte barba">Corte com barba</option>
+          <option value="Degradê">Corte degradê</option>
+          <option value="Barba">Barba completa</option>
+          <option value="Sombrancelha">Sombrancelha</option>
+          </select>
+         
+          <label for="profile">Profissional</label>
+         <select name="Profissional" id="profile">
+           <option> </option>
+           <option value="Jackson">Jackson</option>
+           <option value="Pedrin">Pedrin</option>
+           <option value="Joilson">Joilson</option>
+           <option value="Markx">Markx</option>
+          </select>
+          
+          <button type="button" onclick="addService()">Adicionar Serviço</button>
+        </form>
+     
+       <ul id="service-list"></ul>
+
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
